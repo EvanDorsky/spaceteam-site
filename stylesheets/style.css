@@ -35,6 +35,7 @@ body {
   font-family: Rainyhearts;
 }
 .member-bio .name {
+  font-size: 2.7rem;
   margin: 8px 0;
 }
 .member-bio a {
