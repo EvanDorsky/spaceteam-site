@@ -1,16 +1,14 @@
 body {
+  font-size: 16px;
   background-color: #4481bb;
   color: #eef;
   font-family: Open Sans;
 }
 .jumbotron {
-  color: #223;
-  text-align: center;
-}
-.jumbotron img.logo {
-  margin: 0 auto;
-  width: 50%;
-  max-width: 400px;
+  background: url("../img/sprint-review-1.jpg") 50% 0 fixed;
+  background-size: 100% auto;
+  height: 20rem;
+  overflow: hidden;
 }
 .jumbotron a {
   color: #4481bb;
