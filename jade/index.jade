@@ -2,8 +2,8 @@ doctype html
 
 mixin bio(name, github, githuburl, image, bio)
     .member-bio
-        .avatar.img-wrap
-            img.img-responsive(src="#{image}")
+        .avatar
+            img(src="#{image}")
         .info
             h3.name #{name}
         p.bio #{bio}

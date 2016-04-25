@@ -2,35 +2,35 @@
     "team": [
         {
             "bio": "",
-            "image": "",
+            "image": "./img/evan.svg",
             "github": "",
             "name": "Evan Dorsky",
             "githuburl": ""
         },
         {
             "bio": "",
-            "image": "",
+            "image": "./img/daniel.svg",
             "github": "",
             "name": "Daniel Leong",
             "githuburl": ""
         },
         {
             "bio": "",
-            "image": "",
+            "image": "./img/charlie.svg",
             "github": "",
             "name": "Charlie Mouton",
             "githuburl": ""
         },
         {
             "bio": "",
-            "image": "",
+            "image": "./img/ankeet.svg",
             "github": "",
             "name": "Ankeet Mutha",
             "githuburl": ""
         },
         {
             "bio": "",
-            "image": "",
+            "image": "./img/erin.svg",
             "github": "",
             "name": "Erin Pierce",
             "githuburl": ""
