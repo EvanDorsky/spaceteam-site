@@ -5,8 +5,9 @@ body {
   font-family: Open Sans;
 }
 .jumbotron {
-  background: url("../img/sprint-review-1.jpg") 50% 0 fixed;
+  background-position: 50% 0 fixed;
   background-size: 100% auto;
+  text-align: center;
   height: 20rem;
   overflow: hidden;
 }
