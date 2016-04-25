@@ -30,7 +30,7 @@ html(lang="en")
             p We made Spaceteam!
 
             h2.row-header The Spaceteam (Space)team
-            .row
+            .team-container
                 each member in team
-                    .col-sm-3
+                    .team-member
                         +bio(member.name, member.github, member.githuburl, member.image, member.bio)
