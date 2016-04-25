@@ -1,9 +1,14 @@
-blue-color = #aaa
+bg-color = rgb(100, 100, 101)
 off-white = #eef
+
+@font-face {
+    font-family: 'Rainyhearts'
+    src: url('./font/rainyhearts.ttf') format('truetype')
+}
 
 body
     font-size 16px
-    background-color blue-color
+    background-color bg-color
     color off-white
     font-family Open Sans
 
@@ -12,12 +17,16 @@ body
     background-size 100% auto
 
     text-align center
-    
-    height 20rem
+
     overflow hidden
+    padding 0
+    img
+        visibility hidden
+        margin -3rem 0
+        width 100%
 
     a
-        color blue-color
+        color bg-color
 
 .drop-cap
     vertical-align bottom
@@ -28,6 +37,7 @@ body
     color off-white
 
 .member-bio
+    font-family Rainyhearts
     .name
         margin 8px 0
     a

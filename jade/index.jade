@@ -23,14 +23,9 @@ html(lang="en")
         link(href="img/js-favicon.ico", rel="icon", type="image/x-icon")
 
     body
-        .jumbotron(style="background-image: url('./img/sprint-review-1.jpg')", data-type="background", data-speed="3")
-            .container
-                h1 Spaceteam!
-        .container
-            p We made Spaceteam!
-
-            h2.row-header The Spaceteam (Space)team
-            .team-container
-                each member in team
-                    .team-member
-                        +bio(member.name, member.github, member.githuburl, member.image, member.bio)
+        .jumbotron(style="background-image: url('./img/banner.svg')", data-type="background", data-speed="3")
+            img(src="./img/banner.svg")
+        .team-container
+            each member in team
+                .team-member
+                    +bio(member.name, member.github, member.githuburl, member.image, member.bio)
