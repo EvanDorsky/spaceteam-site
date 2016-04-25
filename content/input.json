@@ -1,0 +1,39 @@
+{
+    "team": [
+        {
+            "bio": "",
+            "image": "",
+            "github": "",
+            "name": "Evan Dorsky",
+            "githuburl": ""
+        },
+        {
+            "bio": "",
+            "image": "",
+            "github": "",
+            "name": "Erin Pierce",
+            "githuburl": ""
+        },
+        {
+            "bio": "",
+            "image": "",
+            "github": "",
+            "name": "Charlie Mouton",
+            "githuburl": ""
+        },
+        {
+            "bio": "",
+            "image": "",
+            "github": "",
+            "name": "Ankeet Mutha",
+            "githuburl": ""
+        },
+        {
+            "bio": "",
+            "image": "",
+            "github": "",
+            "name": "Daniel Leong",
+            "githuburl": ""
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: #4481bb;
+  color: #eef;
+  font-family: Open Sans;
+}
+.jumbotron {
+  color: #223;
+  text-align: center;
+}
+.jumbotron img.logo {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 400px;
+}
+.jumbotron a {
+  color: #4481bb;
+}
+.img-wrap {
+  background-color: rgba(255,255,255,0.2);
+  padding: 8px;
+  margin: 0 auto;
+}
+.drop-cap {
+  vertical-align: bottom;
+  font-size: 2.5em;
+  color: #eef;
+}
+.row-header {
+  color: #eef;
+}
+.member-bio .name {
+  margin: 8px 0;
+}
+.member-bio a {
+  color: #eef;
+}
+.member-bio .info {
+  margin: 6px 0;
+  text-align: center;
+}
+.member-bio .avatar {
+  width: 100px;
+}
