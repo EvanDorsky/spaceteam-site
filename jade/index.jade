@@ -1,12 +1,14 @@
 doctype html
 
-mixin bio(name, image, bio)
+mixin bio(name, image, bio, quote, attr)
     .member-bio
         .avatar
             img(src="#{image}")
         .info
             h3.name #{name}
         p.bio #{bio}
+        p.quote #{quote}
+        p.attr #{attr}
 
 html(lang="en")
     head
@@ -40,7 +42,7 @@ html(lang="en")
             .cols
                 each member in team
                     .col
-                        +bio(member.name, member.image, member.bio)
+                        +bio(member.name, member.image, member.bio, member.quote, member.attr)
 
         .section
             h2.orange-line Console Design

@@ -42,9 +42,6 @@ body {
 .row-header {
   color: #eef;
 }
-.member-bio {
-  font-family: Rainyhearts;
-}
 .member-bio .name {
   font-size: 2.7rem;
   margin: 8px 0;
@@ -87,6 +84,9 @@ body {
   color: #ea148c;
   border-top: 6px solid #ea148c;
 }
+.purple {
+  color: #aa4d9a;
+}
 .green {
   color: #b3d143;
 }
@@ -112,6 +112,9 @@ body {
 }
 .section h2 {
   padding-top: 6px;
+}
+.section h3 {
+  font-size: 1.75rem;
 }
 .section h2,
 .section h3 {

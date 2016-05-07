@@ -1,39 +1,39 @@
 {
     "team": [
         {
-            "bio": "",
+            "bio": "He is the master of destroying curiosity by promtly googling things.  He is not a car.",
             "image": "./img/evan.svg",
-            "github": "",
             "name": "Evan Dorsky",
-            "githuburl": ""
+            "quote": "Just because you are unique does not mean you are useful",
+            "attr": "a demotivational poster"
         },
         {
-            "bio": "",
+            "bio": "He inverts things with astonishing skill, leaving the bewlidered objects no doubt about who is boss.  Like all good Idahoans, he gets his strength from potatoes.",
             "image": "./img/daniel.svg",
-            "github": "",
             "name": "Daniel Leong",
-            "githuburl": ""
+            "quote": "Shoot for the moon, and if you miss, you will land among the stars",
+            "attr": "a motivational poster"
         },
         {
-            "bio": "",
+            "bio": "He impreses others with is abilty to eat anything.  Except his pet plant, who is named Stephan. ",
             "image": "./img/charlie.svg",
-            "github": "",
             "name": "Charlie Mouton",
-            "githuburl": ""
+            "quote": "Live. Love. Butter.",
+            "attr": "The Mouton clan"
         },
         {
-            "bio": "",
+            "bio": "He is renowed for his ability to never wear shoes, even in the winter.  He was once headbutted by a cow.",
             "image": "./img/ankeet.svg",
-            "github": "",
             "name": "Ankeet Mutha",
-            "githuburl": ""
+            "quote": "Nitwit, Blubber, Oddment, Tweet.",
+            "attr": "Dumbledore"
         },
         {
-            "bio": "",
+            "bio": "She has the uncanny ablilty to turn even the most unforgiving objects into soft blanket nests.  She once dreamed of becoming a dinosaur.",
             "image": "./img/erin.svg",
-            "github": "",
             "name": "Erin Pierce",
-            "githuburl": ""
+            "quote": "Destruction, after all, is a form of creation.",
+            "attr": "Graham Greene"
         }
     ]
 }
