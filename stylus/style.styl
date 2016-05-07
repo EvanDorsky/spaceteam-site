@@ -1,10 +1,26 @@
-bg-color = rgb(100, 100, 101)
+bg-color = rgb(25, 23, 33)
 off-white = #eef
+space-green = rgb(179, 209, 67)
+space-pink = rgb(234, 20, 140)
+space-orange = rgb(247, 160, 49)
+space-teal = rgb(0, 170, 171)
+space-purple = rgb(170, 77, 154)
+space-gold = rgb(253, 196, 49)
 
-@font-face {
-    font-family: 'Rainyhearts'
-    src: url('./font/rainyhearts.ttf') format('truetype')
-}
+@font-face
+    font-family 'Rainyhearts'
+    src url('./font/rainyhearts.ttf') format('truetype')
+
+@font-face
+    font-family 'Venus Rising'
+    src url('./font/venus rising rg.ttf') format('truetype')
+
+*
+    margin 0
+    padding 0
+
+li
+    list-style-type none
 
 body
     font-size 16px
@@ -50,9 +66,60 @@ body
         img
             display block
             margin 0 auto
-
-.team-container
+    
+.cols
     display flex
     
-.team-member
+.col
     flex 1 1 auto
+    padding 1rem
+
+space-heading(space-color, upper-line)
+    color space-color
+    if upper-line
+        border-top 6px solid space-color
+    
+.green-line
+    space-heading(space-green, 1)
+
+.orange-line
+    space-heading(space-orange, 1)
+
+.gold-line
+    space-heading(space-gold, 1)
+
+.teal-line
+    space-heading(space-teal, 1)
+
+.pink-line
+    space-heading(space-pink, 1)
+    
+
+.green
+    space-heading(space-green, 0)
+
+.orange
+    space-heading(space-orange, 0)
+
+.gold
+    space-heading(space-gold, 0)
+
+.teal
+    space-heading(space-teal, 0)
+
+.pink
+    space-heading(space-pink, 0)
+
+.purple
+    space-heading(space-purple, 0)
+
+.section
+    h2
+        padding-top 6px
+    h2, h3
+        font-family Venus Rising
+        text-align center
+        
+    padding 3rem
+    max-width 900px
+    margin 0 auto

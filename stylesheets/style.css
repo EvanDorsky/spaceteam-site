@@ -2,9 +2,20 @@
   font-family: 'Rainyhearts';
   src: url("./font/rainyhearts.ttf") format('truetype');
 }
+@font-face {
+  font-family: 'Venus Rising';
+  src: url("./font/venus rising rg.ttf") format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
 body {
   font-size: 16px;
-  background-color: #646465;
+  background-color: #191721;
   color: #eef;
   font-family: Open Sans;
 }
@@ -21,7 +32,7 @@ body {
   width: 100%;
 }
 .jumbotron a {
-  color: #646465;
+  color: #191721;
 }
 .drop-cap {
   vertical-align: bottom;
@@ -49,9 +60,61 @@ body {
   display: block;
   margin: 0 auto;
 }
-.team-container {
+.cols {
   display: flex;
 }
-.team-member {
+.col {
   flex: 1 1 auto;
+  padding: 1rem;
+}
+.green-line {
+  color: #b3d143;
+  border-top: 6px solid #b3d143;
+}
+.orange-line {
+  color: #f7a031;
+  border-top: 6px solid #f7a031;
+}
+.gold-line {
+  color: #fdc431;
+  border-top: 6px solid #fdc431;
+}
+.teal-line {
+  color: #00aaab;
+  border-top: 6px solid #00aaab;
+}
+.pink-line {
+  color: #ea148c;
+  border-top: 6px solid #ea148c;
+}
+.green {
+  color: #b3d143;
+}
+.orange {
+  color: #f7a031;
+}
+.gold {
+  color: #fdc431;
+}
+.teal {
+  color: #00aaab;
+}
+.pink {
+  color: #ea148c;
+}
+.purple {
+  color: #aa4d9a;
+}
+.section {
+  padding: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.section h2 {
+  padding-top: 6px;
+}
+.section h2,
+.section h3 {
+  font-family: Venus Rising;
+  text-align: center;
 }
