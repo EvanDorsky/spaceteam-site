@@ -5,35 +5,40 @@
             "image": "./img/evan.svg",
             "name": "Evan Dorsky",
             "quote": "Just because you are unique does not mean you are useful",
-            "attr": "Demotivational poster"
+            "attr": "Demotivational poster",
+            "ref": "No line of embedded code can be ignored."
         },
         {
             "bio": "He inverts things with astonishing skill, leaving the bewildered objects no doubt about who is boss.  Like all good Idahoans, he gets his strength from potatoes.",
             "image": "./img/daniel.svg",
             "name": "Daniel Leong",
             "quote": "Shoot for the moon, and if you miss, you will land among the stars",
-            "attr": "Motivational poster"
+            "attr": "Motivational poster",
+            "ref": "You don’t know if something works 'til you actually build it."
         },
         {
             "bio": "He impresses others with his abilty to eat anything.  Except his pet plant, who is named Stephan.",
             "image": "./img/charlie.svg",
             "name": "Charlie Mouton",
             "quote": "Live. Love. Butter.",
-            "attr": "The Mouton clan"
+            "attr": "The Mouton clan",
+            "ref": "Sometimes sandpaper should do a mallet's job."
         },
         {
             "bio": "He is renowed for his ability to never wear shoes, even in the winter.  He was once headbutted by a cow.",
             "image": "./img/ankeet.svg",
             "name": "Ankeet Mutha",
             "quote": "Nitwit, Blubber, Oddment, Tweet.",
-            "attr": "Dumbledore"
+            "attr": "Dumbledore",
+            "ref": "Function pointers are awesome!"
         },
         {
             "bio": "She has the uncanny ablilty to turn even the most unforgiving objects into soft blanket nests.  She once dreamed of becoming a dinosaur.",
             "image": "./img/erin.svg",
             "name": "Erin Pierce",
             "quote": "Destruction, after all, is a form of creation.",
-            "attr": "Graham Greene"
+            "attr": "Graham Greene",
+            "ref": "Complicated things are made up of lots of simple things."
         }
     ]
 }

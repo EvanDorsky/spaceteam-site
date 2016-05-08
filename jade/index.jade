@@ -10,6 +10,11 @@ mixin bio(name, image, bio, quote, attr)
         p.quote #{quote}
         p.attr - #{attr}
 
+mixin reflection(name, ref)
+    .member-ref
+        p.name.pink #{name}
+        p.reflection #{ref}
+
 html(lang="en")
     head
         meta(charset="utf-8")
@@ -17,7 +22,6 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         title= "Space Team"
 
-        link(href="stylesheets/bootstrap.min.css", rel="stylesheet")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
         script(type="text/javascript", src="./js/main.js")
         link(href="stylesheets/style.css", rel="stylesheet")
@@ -25,7 +29,7 @@ html(lang="en")
         link(href="img/js-favicon.ico", rel="icon", type="image/x-icon")
 
     body
-        .jumbotron(style="background-image: url('./img/con2-lookup.jpg')", data-type="background", data-speed="3")
+        .banner(style="background-image: url('./img/con2-lookup.jpg')", data-type="background", data-speed="3")
             img.logo(src="./img/spaceteam.svg")
 
         .section
@@ -33,7 +37,7 @@ html(lang="en")
 
             p Spaceteam was originally an awesome mobile game that our team adapted to the real world.  Spaceteam is a multiplayer, collaborative game.  Each player mans a spaceship console with a variety of buttons, switches, and other features.
 
-            p When a level starts, all the name screens get updated, and commands appear on the command screens.  To complete commands, the team needs move a specific feature in a specific way - before the time runs out.  When a command is completed, your spaceship on the central display moves closer to to victory.  Should a command fail, your spaceship moves close to destruction.  In either case, a new command is generated. The features that commands apply to may be on your console, or they may be on one of your spaceteammates consoles, in which case you need to communicate the command to them. There may be commands that the whole spaceteam has to complete in unison. As your spaceteam advances levels, time constraints get tighter, and communication between spaceteammates will become more challenging.
+            p When a level starts, all the name screens get updated, and commands appear on the command screens.  To complete commands, the team needs move a specific feature in a specific way - before the time runs out.  When a command is completed, your spaceship on the central display moves closer to to victory.  Should a command fail, your spaceship moves closer to destruction.  In either case, a new command is generated. The features that commands apply to may be on your console, or they may be on one of your spaceteammates consoles, in which case you need to communicate the command to them. There may be commands that the whole spaceteam has to complete in unison. As your spaceteam advances levels, time constraints get tighter, and communication between spaceteammates becomes more challenging.
 
             p In adapting spaceteam the mobile game to spaceteam the arcade game, we had to make some tradeoffs.
 
@@ -77,9 +81,9 @@ html(lang="en")
                 .col
                     h3.pink Full Team Interactions
                     ul
-                        li Asteroid: When confronted with an asteroid, the ship must activate evasive maneuvers. To do so, all crew members must shake their evasion orbs to avoid obliteration. Each orb consists of two 3D printed hemispheres containing an accelerometer and trinket, which registers the shaking. The orb fits comfortably in two hands, and demands each crew member to give evasion their full attention.
+                        li Asteroid: When confronted with an asteroid, the ship must engage in evasive maneuvers. To do so, all crew members must shake their evasion orbs to avoid obliteration. Each orb consists of two 3D printed hemispheres containing an accelerometer and Trinket (tiny Arduino), which registers the shaking. The orb fits comfortably in two hands, and demands that each crew member give evasion their full attention.
 
-                        li Wormhole: When wormhole travel is imminent, all crew members must brace for spacetime turbulence. To do so, they each must press both wormhole buttons located on the dividers. If the ship must undergo extended wormhole travel, then one of the two buttons must stay suppressed at all times to allow for crew member safety.
+                        li Wormhole: When wormhole travel is imminent, all crew members must brace for spacetime turbulence. To do so, they each must press both wormhole buttons located on the dividers. If the ship must undergo extended wormhole travel, then one of the two buttons must stay pressed at all times to ensure crew member safety.
 
         .section
             h2.green-line Cabinet Design
@@ -105,32 +109,21 @@ html(lang="en")
         .section
             h2.orange-line Reflections
 
-            ul.quotes
-                li
-                    p Function pointers are awesome! 
-                    .attr Ankeet
-
-                li
-                    p Sometimes sandpaper should do a mallet's job.
-                    .attr Charlie
-
-                li
-                    p Complicated things are made up of lots of simple things.
-                    .attr Erin
-
-                li
-                    p You don’t know if something works till you actually build it.
-                    .attr Daniel
-
-                li
-                    p If you don't understand every line of (embedded) code, it's not going to work.
-                    .attr Evan
+            each member in team
+                +reflection(member.name, member.ref)
 
         .section
             h2.teal-line Documentation
 
-            p Our code can be found at: https://github.com/amuthaOlin/projectElecanisms 
+            .cols.documentation
+                .col
+                    a(href="https://github.com/amuthaOlin/projectElecanisms")
+                        h3.green Code
 
-            p Our CAD files can be found at: https://drive.google.com/open?id=0B85K7ptXu38EdHdlUGVXZVZPeHc
+                .col
+                    a(href="https://drive.google.com/open?id=0B85K7ptXu38EdHdlUGVXZVZPeHc") 
+                        h3.pink CAD
 
-            p Our BOM can be found at: https://drive.google.com/open?id=1lFOKoAK83Dvkjz9UB5rdA3Va_oGWKl6eQBox7eeAVyg
+                .col
+                    a(href="https://drive.google.com/open?id=1lFOKoAK83Dvkjz9UB5rdA3Va_oGWKl6eQBox7eeAVyg")
+                        h3.purple BOM
