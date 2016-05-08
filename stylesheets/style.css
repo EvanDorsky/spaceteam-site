@@ -7,29 +7,28 @@
   src: url("./font/venus rising rg.ttf") format('truetype');
 }
 * {
-  margin: 0;
-  padding: 0;
+  margin: none;
+  padding: none;
 }
 li {
   list-style-type: none;
 }
 body {
   font-size: 16px;
+  line-height: 1.5;
   background-color: #191721;
   color: #eef;
-  font-family: Open Sans;
+  font-family: Roboto;
 }
 .jumbotron {
-  background-position: 50% 0 fixed;
+  background-position: 50%;
   background-size: 100% auto;
   text-align: center;
   overflow: hidden;
   padding: 0;
 }
-.jumbotron img {
-  visibility: hidden;
-  margin: -3rem 0;
-  width: 100%;
+.jumbotron img.logo {
+  margin: 3rem auto;
 }
 .jumbotron a {
   color: #191721;
@@ -42,7 +41,11 @@ body {
 .row-header {
   color: #eef;
 }
+.member-bio {
+  text-align: center;
+}
 .member-bio .name {
+  color: #b3d143;
   font-size: 2.7rem;
   margin: 8px 0;
 }
@@ -51,17 +54,31 @@ body {
 }
 .member-bio .info {
   margin: 6px 0;
-  text-align: center;
 }
 .member-bio .avatar img {
   display: block;
   margin: 0 auto;
 }
+.member-bio .quote {
+  color: #fdc431;
+  font-style: italic;
+}
+.member-bio .attr {
+  color: #00aaab;
+}
 .cols {
   display: flex;
 }
 .col {
-  flex: 1 1 auto;
+  flex: 1 1 0;
+  padding: 1rem;
+}
+.cols-wrap {
+  flex-wrap: wrap;
+  display: flex;
+}
+.col-wrap {
+  flex: 1 1 30%;
   padding: 1rem;
 }
 .green-line {

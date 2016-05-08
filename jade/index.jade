@@ -5,10 +5,10 @@ mixin bio(name, image, bio, quote, attr)
         .avatar
             img(src="#{image}")
         .info
-            h3.name #{name}
+            h4.name #{name}
         p.bio #{bio}
         p.quote #{quote}
-        p.attr #{attr}
+        p.attr - #{attr}
 
 html(lang="en")
     head
@@ -21,27 +21,33 @@ html(lang="en")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
         script(type="text/javascript", src="./js/main.js")
         link(href="stylesheets/style.css", rel="stylesheet")
-        link(href='http://fonts.googleapis.com/css?family=Open+Sans:300', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Roboto:300', rel='stylesheet', type='text/css')
         link(href="img/js-favicon.ico", rel="icon", type="image/x-icon")
 
     body
-        .jumbotron(style="background-image: url('./img/banner.svg')", data-type="background", data-speed="3")
-            img(src="./img/banner.svg")
+        .jumbotron(style="background-image: url('./img/con2-lookup.jpg')", data-type="background", data-speed="3")
+            img.logo(src="./img/spaceteam.svg")
 
         .section
             h2.green-line Overview
 
             p Spaceteam was originally an awesome mobile game that our team adapted to the real world.  Spaceteam is a multiplayer, collaborative game.  Each player mans a spaceship console with a variety of buttons, switches, and other features.
 
-            .cols
-                .col
+            p When a level starts, all the name screens get updated, and commands appear on the command screens.  To complete commands, the team needs move a specific feature in a specific way - before the time runs out.  When a command is completed, your spaceship on the central display moves closer to to victory.  Should a command fail, your spaceship moves close to destruction.  In either case, a new command is generated. The features that commands apply to may be on your console, or they may be on one of your spaceteammates consoles, in which case you need to communicate the command to them. There may be commands that the whole spaceteam has to complete in unison. As your spaceteam advances levels, time constraints get tighter, and communication between spaceteammates will become more challenging.
+
+            p In adapting spaceteam the mobile game to spaceteam the arcade game, we had to make some tradeoffs.
+
+            p For budget reasons, we decided to build three consoles instead of four.
+
+            p Given the project timeline and budget, we decided that there would be no powered actuators.  No motors, no pneumatics, no solenoid valves.  All the haptic feedback would have to be passive and the confusion inherent in the game would come from changing the actuator labels.
+
 
         .section
             h2.pink-line Team Spaceteam
 
-            .cols
+            .cols-wrap
                 each member in team
-                    .col
+                    .col-wrap
                         +bio(member.name, member.image, member.bio, member.quote, member.attr)
 
         .section

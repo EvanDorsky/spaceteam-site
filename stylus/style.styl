@@ -16,30 +16,30 @@ space-gold = rgb(253, 196, 49)
     src url('./font/venus rising rg.ttf') format('truetype')
 
 *
-    margin 0
-    padding 0
+    margin none
+    padding none
 
 li
     list-style-type none
 
 body
     font-size 16px
+    line-height 1.5
     background-color bg-color
     color off-white
-    font-family Open Sans
+    font-family Roboto
 
 .jumbotron
-    background-position 50% 0 fixed
+    background-position 50%
     background-size 100% auto
 
     text-align center
 
     overflow hidden
     padding 0
-    img
-        visibility hidden
-        margin -3rem 0
-        width 100%
+
+    img.logo
+        margin 3rem auto
 
     a
         color bg-color
@@ -53,24 +53,39 @@ body
     color off-white
 
 .member-bio
+    text-align center
+    
     .name
+        color space-green
         font-size 2.7rem
         margin 8px 0
     a
         color off-white
     .info
         margin 6px 0
-        text-align center
     .avatar
         img
             display block
             margin 0 auto
+    .quote
+        color space-gold
+        font-style italic
+    .attr
+        color space-teal
     
 .cols
     display flex
     
 .col
-    flex 1 1 auto
+    flex 1 1 0
+    padding 1rem
+    
+.cols-wrap
+    flex-wrap wrap
+    display flex
+    
+.col-wrap
+    flex 1 1 30%
     padding 1rem
 
 space-heading(space-color, upper-line)

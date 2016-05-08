@@ -1,21 +1,21 @@
 {
     "team": [
         {
-            "bio": "He is the master of destroying curiosity by promtly googling things.  He is not a car.",
+            "bio": "He is the master of destroying curiosity by promptly googling things.  He is not a car.",
             "image": "./img/evan.svg",
             "name": "Evan Dorsky",
             "quote": "Just because you are unique does not mean you are useful",
-            "attr": "a demotivational poster"
+            "attr": "Demotivational poster"
         },
         {
-            "bio": "He inverts things with astonishing skill, leaving the bewlidered objects no doubt about who is boss.  Like all good Idahoans, he gets his strength from potatoes.",
+            "bio": "He inverts things with astonishing skill, leaving the bewildered objects no doubt about who is boss.  Like all good Idahoans, he gets his strength from potatoes.",
             "image": "./img/daniel.svg",
             "name": "Daniel Leong",
             "quote": "Shoot for the moon, and if you miss, you will land among the stars",
-            "attr": "a motivational poster"
+            "attr": "Motivational poster"
         },
         {
-            "bio": "He impreses others with is abilty to eat anything.  Except his pet plant, who is named Stephan. ",
+            "bio": "He impresses others with his abilty to eat anything.  Except his pet plant, who is named Stephan.",
             "image": "./img/charlie.svg",
             "name": "Charlie Mouton",
             "quote": "Live. Love. Butter.",
